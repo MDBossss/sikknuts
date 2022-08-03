@@ -67,6 +67,7 @@ img{
   max-width:1000px;
   column-gap:10px;
   padding:20px;
+  height: 100vh;
 
 }
 
@@ -109,3 +110,81 @@ img{
   margin: 10px 0px;
 }
 
+.downloads-title{
+  display:flex;
+  justify-content: center;
+  margin-top:100px;
+  margin-bottom:50px;
+}
+
+.downloads-title h1{
+  letter-spacing: 0.2em;
+}
+
+.downloads{
+  margin:20px;
+  max-width:1000px;
+  display:flex;
+  margin:auto;
+  height:100vh;
+  margin-bottom:50px;
+  border-radius: 4px;
+  padding:20px;
+}
+
+.sidebar{
+  background-color:#cacaca;
+  padding:20px;
+  display:flex;
+  align-items:flex-start;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.sidebar-text{
+  color:black;
+  margin-left:10px;
+  font-family: monospace;
+}
+
+.links{
+  padding:20px;
+  background-color: #f4f4f4;
+  border-radius: 0px 4px 4px 0px;
+  width:100%;
+}
+
+.link-title{
+  color:black;
+  text-align: right;
+  width:100%;
+  padding:20px;
+  font-family: monospace;
+  border-bottom:1px solid #cacaca;
+  cursor:pointer;
+}
+
+.link-title:hover{
+  background-color:#cacaca;
+}
+
+
+#root > div > div.downloads > div.links > div > h3 > svg > path{
+  color: #08aacd;
+}
+
+.status{
+  width:12px;
+  height:12px;
+  margin-top:3px;
+  background-color:green;
+  border-radius: 50%;
+  box-shadow:0 0 0 3px greenyellow;
+}
+
+
+
+@media screen and (max-width:800px){
+  .member{
+    flex: 1 0 30%;
+  }
+}

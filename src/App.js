@@ -12,6 +12,10 @@ function App() {
         <h1>OG NUTS</h1>
       </div>
       <Members/>
+      <div className="downloads-title">
+        <h1>DOWNLOADS</h1>
+      </div>
+      <DownloadLinks/>
     </div>
 
   );
