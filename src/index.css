@@ -185,6 +185,10 @@ img{
 
 @media screen and (max-width:800px){
   .member{
-    flex: 1 0 30%;
+    flex: 1 0 40%;
+  }
+
+  .downloads-title{
+    margin-top: 150px;
   }
 }
