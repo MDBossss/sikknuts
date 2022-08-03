@@ -5,8 +5,8 @@ import Button from "./Button";
 const Header = () => {
   return (
     <div className="header">
-        <h1>sikknuts.</h1>
-        <Typical steps={[2000,"jer budale nemaju kuda."]} wrapper="p" loop="no"/>
+        <h1>sikknuts</h1>
+        <Typical steps={[4000,"jer budale nemaju kuda."]} wrapper="p" loop="no"/>
         <Button/>
     </div>
   )
