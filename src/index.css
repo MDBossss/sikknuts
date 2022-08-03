@@ -90,12 +90,16 @@ img{
   align-items:center;
   padding:10px;
   flex: 1 0 21%;
-  animation: fadeInUp;
-  animation-duration:2s;
+  transition: transform ease-in 0.1s;
+}
+
+.member:hover{
+  transform:translateY(-10px);
 }
 
 .member h3{
   color: #08aacd;
+  text-align: center;
 }
 
 .member h2{
