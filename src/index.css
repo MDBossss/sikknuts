@@ -15,9 +15,13 @@ img{
 #tsparticles{
   position: fixed;
   width: 100%;
-  height:100%;
+  height:100vh !important;
   z-index: -1;
   background-color:black;
+}
+
+#tsparticles > canvas{
+  height:100vh;
 }
 
 .header{
@@ -31,6 +35,7 @@ img{
   animation: fadeIn;
   animation-duration:5s;
 }
+
 
 .header h1{
   font-size:72px;
@@ -58,32 +63,54 @@ img{
   background-color:#08aacd;
 }
 
+.og-nuts{
+  display:flex;
+  align-items: flex-end;
+}
+
+.og-nuts span{
+  font-size:20px;
+}
+
+.og-nuts h1{
+  color:#08aacd;
+  font-weight:bolder;
+  margin-bottom: 0 !important; 
+}
+
 .members{
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   justify-content:center;
   margin:auto;
   flex-wrap: wrap;
   max-width:1000px;
-  column-gap:10px;
+  column-gap:30px;
+  row-gap: 30px;
   padding:20px;
-  height: 100vh;
-
 }
 
-.members-title{
+.members-container{
   display:flex;
-  justify-content: center;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items: center;
+  padding:50px 0px;
   margin-top:100px;
+  background: #1e1f1e;
+  /* 303245 */
 }
 
-.members-title h1{
+.members-container h1{
   letter-spacing: 0.2em;
+  margin-bottom:20px;
 }
 
 .member{
   border: 1px solid #08aacd;
-  border-radius:4px;
+  background: #252524;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  border-radius:10px;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -94,17 +121,21 @@ img{
 }
 
 .member:hover{
-  transform:translateY(-10px);
+  transform:translate(-5px, -5px);
+  box-shadow: 3px 3px 5px #08aacd;
+  border:none;
 }
 
 .member h3{
-  color: #08aacd;
+  color: #fff;
+  font-weight: bold;
   text-align: center;
 }
 
 .member h2{
   margin: 10px 0px;
-  background: linear-gradient(to top left,#08aacd,#6610f2);
+  background: #08aacd;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 5px 10px;
   border-radius: 4px;
 }
@@ -114,14 +145,21 @@ img{
   margin: 10px 0px;
 }
 
-.downloads-title{
+.member img{
+  padding:20px;
+  border-radius: 50%;
+}
+
+.downloads-container{
   display:flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top:100px;
   margin-bottom:50px;
 }
 
-.downloads-title h1{
+.downloads-container h1{
   letter-spacing: 0.2em;
 }
 

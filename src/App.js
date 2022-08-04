@@ -1,6 +1,6 @@
 import AnimatedBackground from "./components/AnimatedBackground";
 import Header from "./components/Header";
-import DownloadLinks from "./components/DownloadLinks";
+import Downloads from "./components/Downloads";
 import Members from "./components/Members";
 
 function App() {
@@ -8,14 +8,17 @@ function App() {
     <div>
       <AnimatedBackground/>
       <Header/>
-      <div className="members-title">
-        <h1>OG NUTS</h1>
+      <div className="members-container">
+        <div className="og-nuts">
+          <span>OG</span>
+          <h1>NUTS</h1>
+        </div>
+        <Members/>
       </div>
-      <Members/>
-      <div className="downloads-title">
+      <div className="downloads-container">
         <h1>DOWNLOADS</h1>
+        <Downloads/>
       </div>
-      <DownloadLinks/>
     </div>
 
   );
