@@ -1,5 +1,5 @@
 import Typical from "react-typical";
-import Button from "./Button";
+import DiscordButton from "./DiscordButton";
 
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
     <div className="header">
         <h1>sikknuts</h1>
         <Typical steps={[2500,"jer budale nemaju kuda."]} wrapper="p" loop="no"/>
-        <Button/>
+        <DiscordButton link="https://discord.gg/nB6GxNje"/>
     </div>
   )
 }

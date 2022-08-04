@@ -150,79 +150,41 @@ img{
   border-radius: 50%;
 }
 
-.downloads-container{
+.downloads{
+  width:100%;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height:100vh;
+  user-select: none;
+  animation: fadeIn;
+  animation-duration:5s;
   margin-top:100px;
-  margin-bottom:50px;
 }
 
-.downloads-container h1{
-  letter-spacing: 0.2em;
+.downloads h1{
+  font-size:72px;
 }
 
-.downloads{
-  margin:20px;
-  max-width:1000px;
+.login-options{
   display:flex;
-  margin:auto;
-  min-height:500px;
-  margin-bottom:50px;
-  border-radius: 4px;
+  justify-content: center;
+  flex-wrap:wrap;
+  gap:20px;
   padding:20px;
 }
 
-.sidebar{
-  background-color:#cacaca;
-  padding:20px;
+.copy{
   display:flex;
-  align-items:flex-start;
-  border-radius: 4px 0px 0px 4px;
-}
-
-.sidebar-text{
-  color:black;
-  margin-left:10px;
-  font-family: monospace;
-}
-
-.links{
+  justify-content: center;
   padding:20px;
-  background-color: #f4f4f4;
-  border-radius: 0px 4px 4px 0px;
-  width:100%;
+  text-decoration: none;
 }
 
-.link-title{
-  color:black;
-  text-align: right;
-  width:100%;
-  padding:20px;
-  font-family: monospace;
-  border-bottom:1px solid #cacaca;
-  cursor:pointer;
+.copy:hover{
+  color:#08aacd;
 }
-
-.link-title:hover{
-  background-color:#cacaca;
-}
-
-
-#root > div > div.downloads > div.links > div > h3 > svg > path{
-  color: #08aacd;
-}
-
-.status{
-  width:12px;
-  height:12px;
-  margin-top:3px;
-  background-color:green;
-  border-radius: 50%;
-  box-shadow:0 0 0 3px greenyellow;
-}
-
 
 
 @media screen and (max-width:800px){
@@ -230,7 +192,5 @@ img{
     flex: 1 0 40%;
   }
 
-  .downloads-title{
-    margin-top: 150px;
-  }
+
 }

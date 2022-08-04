@@ -2,6 +2,7 @@ import AnimatedBackground from "./components/AnimatedBackground";
 import Header from "./components/Header";
 import Downloads from "./components/Downloads";
 import Members from "./components/Members";
+import {FaGithub} from "react-icons/fa";
 
 function App() {
   return (
@@ -15,10 +16,8 @@ function App() {
         </div>
         <Members/>
       </div>
-      <div className="downloads-container">
-        <h1>DOWNLOADS</h1>
-        <Downloads/>
-      </div>
+      <Downloads/>
+      <a className="copy" href="https://github.com/MDBossss"><FaGithub/> MDBoss</a>
     </div>
 
   );
