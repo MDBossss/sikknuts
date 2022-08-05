@@ -66,10 +66,12 @@ img{
 .og-nuts{
   display:flex;
   align-items: flex-end;
+  text-shadow: rgba(0, 0, 0, 1) 5px 5px 6px;
 }
 
 .og-nuts span{
   font-size:20px;
+  font-weight: 800;
 }
 
 .og-nuts h1{
@@ -109,7 +111,6 @@ img{
 .member{
   border: 1px solid #08aacd;
   background: #252524;
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
   border-radius:10px;
   display:flex;
   flex-direction: column;
@@ -117,7 +118,7 @@ img{
   align-items:center;
   padding:10px;
   flex: 1 0 21%;
-  transition: transform ease-in 0.1s;
+  transition: transform ease-in 0.1s, box-shadow 0.3s ease, border 0.3s ease;
 }
 
 .member:hover{
@@ -175,21 +176,207 @@ img{
   padding:20px;
 }
 
-.copy{
+.joinus{
+  background-color:#1e1f1e;
+  display:flex;
+  justify-content:space-between;
+  padding: 80px 0px;
+}
+
+.joinus-left{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  text-align: center;
+  flex: 1 0 40%;
+}
+
+.joinus-right{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.joinus-right img{
+  border-radius: 10px;
+  transform:skew(-5deg,-5deg);
+  width:75%;
+  margin-right:50px;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+  border:1px solid #08aacd;
+  box-shadow: -3px -3px 5px #08aacd, #252524 -20px -20px 0px 0px;
+}
+
+.joinus-right img:hover{
+  transform:skew(-5deg,-5deg) translate(10px,10px);
+  box-shadow: -3px 3px 5px #08aacd, #252524 -30px -30px 0px 0px;
+}
+
+.joinus-title{
+  display:flex;
+  align-items:flex-end;
+  margin-bottom:5px;
+  text-shadow: rgba(0, 0, 0, 1) 5px 5px 6px;
+}
+
+.joinus-title h1{
+  color:#08aacd;
+}
+
+.joinus-title span{
+  font-size:20px;
+  font-weight: 800;
+}
+
+.stats{
+  background-color: #1e1f1e;
+  display:flex;
+  row-gap: 30px;
+  column-gap: 30px;
+  padding:100px 20px;
+}
+
+.stat{
+  background-color: #252524;
+  flex: 1 1 0;
+  text-align: center;
+  padding:20px;
+  border-radius: 10px 10px 0px 0px ;
+  border-bottom: 2px solid #08aacd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat:hover{
+  box-shadow: 0px 3px 5px #08aacd;
+  transform: translateY(-3px);
+}
+
+
+.stat-bottom h2{
+  margin: 5px 0px;
+}
+
+.gameplay{
+  background-color:#1e1f1e;
+  display:flex;
+  justify-content:space-between;
+  padding: 80px 0px;
+}
+
+.gameplay-left{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.gameplay-left video{
+  border-radius: 10px;
+  transform:skew(5deg,5deg);
+  width:75%;
+  margin-right:50px;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+  border:1px solid #08aacd;
+  box-shadow: 3px -3px 5px #08aacd, #252524 20px -20px 0px 0px;
+}
+
+.gameplay-left video:hover{
+  transform:skew(5deg,5deg) translate(-10px,10px);
+  box-shadow: 3px 3px 5px #08aacd, #252524 30px -30px 0px 0px;
+}
+
+.gameplay-right{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:20px;
+  text-align: center;
+  flex: 1 0 40%;
+}
+
+.gameplay-games{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  column-gap:30px;
+  row-gap:30px;
+  padding:30px;
+}
+
+.game{
+  flex:1 1 0;
+}
+
+.footer{
   display:flex;
   justify-content: center;
   padding:20px;
+  background-color:#252524;
+}
+
+.footer *{
+  margin: 0px 3px;
+}
+
+.footer a{
   text-decoration: none;
 }
 
-.copy:hover{
+.footer a:hover{
   color:#08aacd;
 }
 
 
+
+
+
 @media screen and (max-width:800px){
   .member{
+    flex: 1 1 40%;
+  }
+
+  .joinus{
+    flex-wrap:wrap;
+    flex-direction: column-reverse;
+    column-gap:30px;
+    row-gap:30px;
+  }
+  
+  .joinus-right img{
+    margin: auto;
+    transform:none;
+    box-shadow:none;
+  }
+
+  .joinus-right img:hover{
+    transform: translateY(10px);
+    box-shadow: -3px -3px 5px #08aacd;
+  }
+
+  .stats{
+    flex-wrap:wrap;
+  }
+
+  .stat{
     flex: 1 0 40%;
+  }
+
+  .gameplay{
+    flex-wrap:wrap;
+    flex-direction: column ;
+  }
+
+  .gameplay-left video{
+    margin: auto;
+    transform:skew(0.1deg,0.1deg);
+    box-shadow:none;
+    z-index: 1000;
+    background-color:black;
+  }
+
+  .gameplay-left video:hover{
+    transform: skew(0.1deg, 0.1deg) translateY(10px);
+    box-shadow: -3px -3px 5px #08aacd;
   }
 
 

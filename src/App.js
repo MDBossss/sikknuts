@@ -2,7 +2,10 @@ import AnimatedBackground from "./components/AnimatedBackground";
 import Header from "./components/Header";
 import Downloads from "./components/Downloads";
 import Members from "./components/Members";
-import {FaGithub} from "react-icons/fa";
+import JoinUs from "./components/JoinUs";
+import Stats from "./components/Stats";
+import Gameplay from "./components/Gameplay";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,7 +20,10 @@ function App() {
         <Members/>
       </div>
       <Downloads/>
-      <a className="copy" href="https://github.com/MDBossss"><FaGithub/> MDBoss</a>
+      <JoinUs/>
+      <Stats/>
+      <Gameplay/>
+      <Footer/>
     </div>
 
   );
